@@ -7,10 +7,8 @@
 	<name>${project.parent.name}</name>
 	<version>${project.parent.version}</version>
 	<package>${project.parent.groupId}.${project.parent.artifactId}</package>
-	<author>vi</author>
-	<description>
-			${project.parent.description}
-	</description>
+	<author>ict4h</author>
+	<description>${project.parent.description}</description>
 
     <activator>org.openmrs.module.feedpublishermodule.FeedPublisherActivator</activator>
 
