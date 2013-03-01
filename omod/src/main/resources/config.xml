@@ -12,8 +12,7 @@
 			${project.parent.description}
 	</description>
 
-	<!--<activator>${project.parent.groupId}.${project.parent.artifactId}.BasicModuleActivator</activator>-->
-    <activator>org.openmrs.module.feedpublishermodule.BasicModuleActivator</activator>
+    <activator>org.openmrs.module.feedpublishermodule.FeedPublisherActivator</activator>
 
 	<require_version>${openMRSVersion}</require_version>
 	

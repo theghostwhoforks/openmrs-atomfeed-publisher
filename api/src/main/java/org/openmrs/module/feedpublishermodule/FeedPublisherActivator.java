@@ -18,7 +18,7 @@ import org.apache.commons.logging.LogFactory;
 import org.openmrs.module.Activator;
 import org.openmrs.module.ModuleActivator;
 
-public class BasicModuleActivator implements ModuleActivator {
+public class FeedPublisherActivator implements ModuleActivator {
 	
 	private Log log = LogFactory.getLog(this.getClass());
 
