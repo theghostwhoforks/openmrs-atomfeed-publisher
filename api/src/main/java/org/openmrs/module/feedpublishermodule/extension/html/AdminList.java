@@ -19,35 +19,20 @@ import java.util.Map;
 import org.openmrs.module.Extension;
 import org.openmrs.module.web.extension.AdministrationSectionExt;
 
-/**
- * This class defines the links that will appear on the administration page under the
- * "feedpublishermodule.title" heading. This extension is enabled by defining (uncommenting) it in the
- * /metadata/config.xml file.
- */
 public class AdminList extends AdministrationSectionExt {
-	
-	/**
-	 * @see org.openmrs.module.web.extension.AdministrationSectionExt#getMediaType()
-	 */
+
 	public Extension.MEDIA_TYPE getMediaType() {
 		return Extension.MEDIA_TYPE.html;
 	}
-	
-	/**
-	 * @see org.openmrs.module.web.extension.AdministrationSectionExt#getTitle()
-	 */
+
 	public String getTitle() {
-		return "feedpublishermodule.title";
+		return "Feeds";
 	}
-	
-	/**
-	 * @see org.openmrs.module.web.extension.AdministrationSectionExt#getLinks()
-	 */
+
 	public Map<String, String> getLinks() {
 		
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("module/feedpublishermodule/events/recent.json", "recent events");
 		return map;
 	}
-	
 }

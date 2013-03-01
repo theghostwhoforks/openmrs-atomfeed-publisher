@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class BasicModuleFormController{
+public class FeedController {
 
 	protected final Log log = LogFactory.getLog(getClass());
 
