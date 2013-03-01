@@ -16,26 +16,39 @@ package org.openmrs.module.feedpublishermodule;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.module.Activator;
+import org.openmrs.module.ModuleActivator;
 
-/**
- * This class contains the logic that is run every time this module is either started or shutdown
- */
-public class BasicModuleActivator implements Activator {
+public class BasicModuleActivator implements ModuleActivator {
 	
 	private Log log = LogFactory.getLog(this.getClass());
-	
-	/**
-	 * @see org.openmrs.module.Activator#startup()
-	 */
-	public void startup() {
-		log.info("Starting Basic Module");
-	}
-	
-	/**
-	 * @see org.openmrs.module.Activator#shutdown()
-	 */
-	public void shutdown() {
-		log.info("Shutting down Basic Module");
-	}
-	
+
+    @Override
+    public void willRefreshContext() {
+        log.info("Atom Feed Publisher Module : Refreshing Context");
+    }
+
+    @Override
+    public void contextRefreshed() {
+        log.info("Atom Feed Publisher Module : Context Refreshed");
+    }
+
+    @Override
+    public void willStart() {
+        log.info("Atom Feed Publisher Module : Starting Module");
+    }
+
+    @Override
+    public void started() {
+        log.info("Atom Feed Publisher Module : Module Started");
+    }
+
+    @Override
+    public void willStop() {
+        log.info("Atom Feed Publisher Module : Stopping Module");
+    }
+
+    @Override
+    public void stopped() {
+        log.info("Atom Feed Publisher Module : Module Stopped");
+    }
 }

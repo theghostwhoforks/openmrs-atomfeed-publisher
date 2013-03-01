@@ -25,12 +25,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class FeedController {
 
-	protected final Log log = LogFactory.getLog(getClass());
+	protected final Log log = LogFactory.getLog(FeedController.class);
 
     @RequestMapping(value = "/module/feedpublishermodule/events/recent.json", method = RequestMethod.GET)
     @ResponseBody
-	public ResponseEntity<String> showForm(){
+	public ResponseEntity<String> get(){
+        log.info("Inside recent events get.");
         return new ResponseEntity<String>("{ feeds }", HttpStatus.OK);
 	}
-
 }
