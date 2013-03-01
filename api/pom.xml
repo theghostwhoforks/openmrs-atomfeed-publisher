@@ -3,14 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.openmrs.module</groupId>
-		<artifactId>basicmodule</artifactId>
+		<artifactId>feedpublishermodule</artifactId>
 		<version>0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>basicmodule-api</artifactId>
+	<artifactId>feedpublishermodule-api</artifactId>
 	<packaging>jar</packaging>
-	<name>Basic Module API</name>
-	<description>API project for Basic Module</description>
+	<name>Atom Feed Publisher Module API</name>
+	<description>API project for ATOM Feed Publisher Module</description>
 
 	<dependencies>
 		<!-- 
