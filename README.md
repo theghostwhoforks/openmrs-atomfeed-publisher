@@ -1,4 +1,4 @@
 openmrs-atomfeed-publisher
 ==========================
 
-AtomFeed Publisher Module For OpenMrs
+AtomFeed Publisher Module For OpenMrs. WIP
